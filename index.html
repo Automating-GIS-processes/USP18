@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-88382509-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to USP Digital Urban - Python GIS &mdash; Intro to Python GIS  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Intro to Python GIS  documentation" href="#"/>
+        <link rel="next" title="General info" href="course-info/course-info.html"/>
+    <link href="_static/geo-python.css" rel="stylesheet" type="text/css">
+     
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Intro to Python GIS
+          
+
+          
+            
+            <img src="_static/logo_small.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="course-info/course-info.html">General info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html">Installing Python + GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="course-info/License-terms.html">License and terms of usage</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Intro to Python GIS</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to USP Digital Urban - Python GIS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/Automating-GIS-processes/CSC18/blob/master/source/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="figure">
+<img alt="_images/USP_PythonGIS_banner.png" src="_images/USP_PythonGIS_banner.png" />
+</div>
+<div class="section" id="welcome-to-usp-digital-urban-python-gis">
+<h1>Welcome to USP Digital Urban - Python GIS<a class="headerlink" href="#welcome-to-usp-digital-urban-python-gis" title="Permalink to this headline">¶</a></h1>
+<p>This lesson is a quick introductory tour that aims to demonstrate how to use Python programming language for automating
+common GIS tasks. The examples that you will see are based on teaching materials from <a class="reference external" href="https://geo-python.github.io">Geo-Python</a> and <a class="reference external" href="https://autogis.github.io">Automating GIS processes</a>
+-courses that are introductory courses (5 credits) to Python programming and using Python for GIS. Those courses are altogether 14 weeks,
+so during this 3 hour lesson we will only touch the surface of what can be done with programming and why is it useful to know how to program.</p>
+<div class="section" id="learning-goals">
+<h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Understand why it is good to know at least the basics of programming</li>
+<li>Know some of the basic concepts in programming (e.g. variables, loops, conditional statements)</li>
+<li>Know how programming can be used to do GIS and spatial analysis (read/write spatial data)</li>
+<li>Know where to look for more information and start learning yourself</li>
+</ul>
+</div>
+<div class="section" id="topics">
+<h2>Topics<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
+<p>The materials that we touch upon today are divided into following themes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference external" href="_static/USP_Introduction_to_programming.pdf">Why to learn how to program?</a></dt>
+<dd><ul class="first last">
+<li>See also, e.g. article in <a class="reference external" href="http://theconversation.com/why-everyone-should-have-to-learn-computer-programming-62328">The Conversation about Why everyone should learn computer programming</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html"><span class="doc">How to start and install Python?</span></a></li>
+<li><a class="reference external" href="https://automating-gis-processes.github.io/2017/lessons/L1/Intro-Python-GIS.html">Doing GIS in Python</a></li>
+<li><a class="reference external" href="https://automating-gis-processes.github.io/2017/lessons/L2/geopandas-basics.html">Introduction to Geopandas</a></li>
+<li><a class="reference external" href="https://automating-gis-processes.github.io/2017/lessons/L6/01-overview.html">Python programming with QGIS 3.0 (processing -module)</a></li>
+</ul>
+</div></blockquote>
+<p>If you are eager to learn more, there are more materials (with videos) available from <a class="reference external" href="https://geo-python.github.io">Geo-Python</a> and <a class="reference external" href="http://autogis.github.io">Automating GIS processes</a> -course sites.</p>
+<p>If you want to have access to the <a class="reference external" href="https://geo-python.github.io/2017/lessons/L1/course-environment-components.html#cloud-computing-environment">cloud computing environment</a> where you can really easily start to test all the Python GIS examples you have seen (all necessary softwares are readily installed),
+please contact Henrikki (see <a class="reference internal" href="course-info/course-info.html"><span class="doc">here</span></a>).</p>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>The exercise for this week is a short and fun introduction to Python programming using easy to use online learning environment provided by <strong>DataCamp</strong>.
+You need to register yourself to <a class="reference external" href="https://www.datacamp.com">DataCamp</a> (sign up easily e.g. with email or Facebook) and start a Track
+<a class="reference external" href="https://www.datacamp.com/courses/intro-to-python-for-data-science">Intro to Python for Data Science</a>.</p>
+<p>From the <strong>Intro to Python for Data Science</strong> -track you should finish the first 3 chapters (i.e. do the exercises):</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Python basics</li>
+<li>Python lists</li>
+<li>Functions and Packages</li>
+</ol>
+</div></blockquote>
+<p>Going through these chapters should take approximately 3 hours. Once you have finished those chapters, you should send me (via email)
+a screenshot showing that you have finished those exercises, such as the one below:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/DataCamp_exercise.PNG"><img alt="_images/DataCamp_exercise.PNG" src="_images/DataCamp_exercise.PNG" style="width: 500px;" /></a>
+</div>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="course-info/course-info.html">General info</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="course-info/course-info.html#instructor">Instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course-info/course-info.html#useful-literature">Useful literature</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html">Installing Python + GIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html#install-python-gis-on-windows">Install Python + GIS on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html#install-python-gis-on-linux-mac">Install Python + GIS on Linux / Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course-info/Installing_Anacondas_GIS.html#how-to-find-out-which-conda-command-to-use-when-installing-a-package">How to find out which conda -command to use when installing a package?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="course-info/License-terms.html">License and terms of usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="course-info/License-terms.html#instructional-materials">Instructional materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="course-info/License-terms.html#code-snippets-software">Code snippets / software</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="course-info/course-info.html" class="btn btn-neutral float-right" title="General info" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Henrikki Tenkanen.
+      Last updated on Feb 11, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p> <br/> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /> </a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
